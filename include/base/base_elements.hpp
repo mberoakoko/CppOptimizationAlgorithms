@@ -23,6 +23,8 @@ namespace Optim::base {
     using OutputType = std::variant<VectorVar, double>;
 
     using FuncType = std::function<OutputType(InputType)>;
+    using UnaryFuncType = std::function<float(float)>;
+
 }
 
 namespace Optim::diff {
